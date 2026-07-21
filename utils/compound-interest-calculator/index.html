@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Compound Interest Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card" role="application" aria-label="Compound Interest Calculator">
+    <h1>Compound Interest Calculator</h1>
+
+    <label for="principal">Principal</label>
+    <input id="principal" type="number" min="0" step="any" value="1000" />
+
+    <label for="rate">Annual rate (%)</label>
+    <input id="rate" type="number" min="0" step="any" value="5" />
+
+    <label for="time">Time (years)</label>
+    <input id="time" type="number" min="0" step="any" value="2" />
+
+    <label for="frequency">Compounds per year</label>
+    <input id="frequency" type="number" min="1" step="1" value="1" />
+
+    <button id="calculate">Calculate</button>
+
+    <div class="result">
+      <div>
+        <span class="result-label">Interest</span>
+        <span id="interest" class="result-value">0</span>
+      </div>
+      <div>
+        <span class="result-label">Total amount</span>
+        <span id="total" class="result-value">0</span>
+      </div>
+    </div>
+  </main>
+  <script src="compound-interest.js"></script>
+</body>
+</html>
