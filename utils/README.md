@@ -2,6 +2,15 @@
 
 A collection of small, self-contained utilities.
 
+## Code style
+
+- Plain HTML, CSS, and JavaScript — no build step, bundler, or dependencies.
+- Each util lives in its own directory with `index.html`, `style.css`, and a
+  single `.js` file for logic.
+- Keep core logic in small, pure functions (e.g. `compute()`,
+  `simpleInterest()`) separate from DOM/UI wiring, and export them for Node
+  so they can be unit-tested without a browser.
+
 ## calculator
 
 A simple calculator built with plain HTML, CSS, and JavaScript — no build step
