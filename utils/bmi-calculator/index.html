@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BMI Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card" role="application" aria-label="BMI Calculator">
+    <h1>BMI Calculator</h1>
+
+    <label for="weight">Weight (kg)</label>
+    <input id="weight" type="number" min="0" step="any" value="70" />
+
+    <label for="height">Height (cm)</label>
+    <input id="height" type="number" min="0" step="any" value="170" />
+
+    <button id="calculate">Calculate</button>
+
+    <div class="result">
+      <div>
+        <span class="result-label">BMI</span>
+        <span id="bmi" class="result-value">0</span>
+      </div>
+      <div>
+        <span class="result-label">Category</span>
+        <span id="category" class="result-value">-</span>
+      </div>
+    </div>
+  </main>
+  <script src="bmi.js"></script>
+</body>
+</html>

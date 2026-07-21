@@ -58,3 +58,25 @@ Calculate.
 The core math lives in `simpleInterest()` and `compoundInterest()`, pure
 functions that are also exported for Node so they can be unit-tested without
 a browser.
+
+## bmi-calculator
+
+A BMI (Body Mass Index) calculator built with plain HTML, CSS, and
+JavaScript — no build step or dependencies.
+
+- `bmi-calculator/index.html` — markup and layout
+- `bmi-calculator/style.css` — styling
+- `bmi-calculator/bmi.js` — logic (BMI math + UI wiring)
+
+### Usage
+
+Open `bmi-calculator/index.html` in any web browser. Enter a weight in
+kilograms and a height in centimeters, then click Calculate.
+
+### Features
+
+- BMI: `weight (kg) / height (m)^2`
+- Categorizes the result as Underweight, Normal weight, Overweight, or Obese
+
+The core math lives in `bmi()` and `bmiCategory()`, pure functions that are
+also exported for Node so they can be unit-tested without a browser.
