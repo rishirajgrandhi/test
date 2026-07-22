@@ -80,3 +80,25 @@ kilograms and a height in centimeters, then click Calculate.
 
 The core math lives in `bmi()` and `bmiCategory()`, pure functions that are
 also exported for Node so they can be unit-tested without a browser.
+
+## inr-usd-converter
+
+An INR to USD converter built with plain HTML, CSS, and JavaScript — no build
+step or dependencies.
+
+- `inr-usd-converter/index.html` — markup and layout
+- `inr-usd-converter/style.css` — styling
+- `inr-usd-converter/inr-usd.js` — logic (conversion math + UI wiring)
+
+### Usage
+
+Open `inr-usd-converter/index.html` in any web browser. Enter an amount in
+INR and click Convert.
+
+### Features
+
+- Fixed conversion rate: 1 USD = 95 INR
+- USD result rounded to 2 decimal places
+
+The core math lives in `inrToUsd()`, a pure function that is also exported
+for Node so it can be unit-tested without a browser.
