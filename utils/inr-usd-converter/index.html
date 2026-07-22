@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>INR to USD Converter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card" role="application" aria-label="INR to USD Converter">
+    <h1>INR to USD Converter</h1>
+
+    <label for="inr">Amount (INR)</label>
+    <input id="inr" type="number" min="0" step="any" value="100" />
+
+    <button id="calculate">Convert</button>
+
+    <div class="result">
+      <div>
+        <span class="result-label">USD</span>
+        <span id="usd" class="result-value">0</span>
+      </div>
+      <div>
+        <span class="result-label">Rate</span>
+        <span id="rate" class="result-value">1 USD = 95 INR</span>
+      </div>
+    </div>
+  </main>
+  <script src="inr-usd.js"></script>
+</body>
+</html>
